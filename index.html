@@ -8,121 +8,373 @@
 </head>
 <body>
 <header>
-    <div class="header-part">custom care: 123 456 789</div>
-    <div class="header-part">
-        <div class="container clearfix">
-            <div>
-                <select>
-                    <option selected="selected">$ US</option>
-                </select>
+    <div class="header-part-set clearfix">
+        <div class="container container-cleaner-phone">
+            <div class="header-part">custom care: 123 456 789</div>
+            <div class="header-part clearfix">
+                <div class="container container-cleaner-tab">
+                    <div>
+                        <select>
+                            <option selected="selected">$ US</option>
+                        </select>
+                    </div>
+                    <div class="clearfix">
+                        <a href="#"><div class="bg-ContactUser"></div> my account</a>
+                    </div>
+                    <div><button class="bg-Search"></button></div>
+                </div>
             </div>
-            <div class="clearfix">
-                <a href="#"><div class="bg-ContactUser"></div> my account</a>
+        </div>
+    </div>
+    <div class="header-logo-desktop">
+        <div class="header-logo-part-set clearfix">
+            <div class="container container-cleaner-phone">
+                <a href="#">
+                    <div class="logo"></div>
+                </a>
 
+                <div class="bucket-set">
+                    <select name="Your cart" id="YourCart">
+                        <option selected="selected">Your cart</option>
+                    </select>
+                    <div class="container container-cleaner-tab">
+                        <div class="bucket clearfix">
+                            <a href="#"><div class="bg-Bucket"></div></a>
+                            <div class="bucket-count">
+                                <span>0 items  </span><span>  $ 0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div><button class="bg-Search"></button></div>
+        </div>
+        <div class="container">
+            <div class="menu clearfix">
+                <span>Menu</span>
+                <nav>
+                    <input type="checkbox" name="menu" id="btn-menu" />
+                    <label for="btn-menu" class="bg-menu"></label>
+                    <div class="menu-desktop">
+                        <ul>
+                            <li><select><option selected="selected">new</option></select></li>
+                            <li><select><option selected="selected">designers</option></select></li>
+                            <li><select><option selected="selected">women</option></select></li>
+                            <li><select><option selected="selected">men</option></select></li>
+                            <li><select><option selected="selected">clearence</option></select></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </div>
-    <div class="logo">
-        <a href="#"><img src="img/logo.png" alt="Logo"></a>
-    </div>
-    <div class="container">
-        <div class="bucket clearfix">
-            <a href="#"><div class="bg-Bucket"></div></a>
-            <div class="bucket-count">
-                <span>0 items  </span><span>  $ 0</span>
-            </div>
-        </div>
-        <div class="menu clearfix">
-            <span>Menu</span>
-            <nav>
-                <button class="bg-menu"></button>
-            </nav>
-        </div>
+    <div class="slider">
+        <ul class="dots-commands">
+            <li><a href="#sl1"></a></li>
+            <li><a href="#sl2"></a></li>
+            <li><a href="#sl3"></a></li>
+            <li><a href="#sl4"></a></li>
+            <li><a href="#sl5"></a></li>
+        </ul>
     </div>
 </header>
 <main>
-    <div class="container">
-        <div class="email clearfix">
-            <form action="">
-                <input type="email" placeholder="Your email address">
-                <button><div class="bg-plus_max"></div></button>
-            </form>
-        </div>
-        <div class="links clearfix">
-            <span>Find us here</span>
-            <div class="links-item"><a href="#"><div class="bg-facebook"></div></a></div>
-            <div class="links-item"><a href="#"><div class="bg-twitter"></div></a></div>
-            <div class="links-item"><a href="#"><div class="bg-PLogo"></div></a></div>
+    <div class="email-links">
+        <div class="container clearfix">
+            <div class="email clearfix">
+
+                <form action="">
+                    <label for="YourEmail">Stay updated</label>
+                    <input type="email" id="YourEmail" placeholder="Your email address">
+                    <button><div class="bg-plus_max bg-plus"></div></button>
+                </form>
+            </div>
+            <div class="links clearfix">
+                <span>Find us here</span>
+                <div class="links-item"><a href="#"><div class="bg-facebook"></div></a></div>
+                <div class="links-item"><a href="#"><div class="bg-twitter"></div></a></div>
+                <div class="links-item"><a href="#"><div class="bg-PLogo"></div></a></div>
+            </div>
         </div>
     </div>
+    <section class="offers">
+        <div class="container clearfix">
+            <div class="offer">
+                <!--<img src="img/offer1.png" alt="Offer">-->
+            </div>
+            <div class="offer">
+                <!--<img src="img/offer2.png" alt="Offer">-->
+            </div>
+            <div class="offer">
+                <!--<img src="img/offer3.png" alt="Offer">-->
+            </div>
+            <div class="offer">
+                <!--<img src="img/offer4.png" alt="Offer">-->
+                <button>shop now ▸</button>
+            </div>
+        </div>
+    </section>
     <section class="product-main">
         <div class="product-main-title">
             <div class="container clearfix">
-                <span>What’s hot?</span>
-                <select name="" id=""></select>
+                <div class="product-main-title-phone">
+                    <span>What’s hot?</span>
+                    <select></select>
+                </div>
+                <div class="product-main-title-tab clearfix">
+                    <ul class="clearfix">
+                        <li><button>what’s hot?</button></li>
+                        <li><button>designers</button></li>
+                        <li><button>featured</button></li>
+                        <li><button>latest</button></li>
+                    </ul>
+                    <div class="product-title-btn clearfix">
+                        <button>
+                            <div class="bg-arrow_left"></div>
+                        </button>
+                        <button>
+                            <div class="bg-arrow_right"></div>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="product-main-catalog">
-            <div class="container">
+            <div class="container container-cleaner-desktop">
                 <div class="product-catalog-set clearfix">
+                    <div class="product-catalog-set-items">
+
+                    </div>
                     <div class="product-catalog-item">
-                        <img src="img/FirstProduct.png" alt="Product">
+                        <!--<img src="img/FirstProduct.png" alt="Product">-->
                         <div class="product-catalog-item-desc">
                             <div>MIMOSA LACE DRESS</div>
                             <div>$76.95</div>
-                            <button class="btn btn-add">add to cart<div class="bg-plus_min"></div></button>
+                            <button class="btn btn-add">add to cart<div class="bg-plus_min bg-plus"></div></button>
                         </div>
                     </div>
                     <div class="product-catalog-item">
-                        <img src="img/SecondProduct.png" alt="Product">
+                        <div class="sale">
+                            <img src="img/sale.png" alt="Sale">
+                        </div>
+                        <!--<img src="img/IPadProduct.png" alt="Product">-->
                         <div class="product-catalog-item-desc">
                             <div>WishVitalise Dress</div>
                             <div>$96.55</div>
-                            <button class="btn btn-add">add to cart<div class="bg-plus_min"></div></button>
+                            <button class="btn btn-add">add to cart<div class="bg-plus_min bg-plus"></div></button>
                         </div>
                     </div>
-                    <div>
-                        <button class="btn btn-black">load more</button>
+                    <div class="product-catalog-item">
+                        <!--<img src="img/SecondProduct.png" alt="Product">-->
+                        <div class="product-catalog-item-desc">
+                            <div>WishVitalise Dress</div>
+                            <div>$96.55</div>
+                            <button class="btn btn-add">add to cart<div class="bg-plus_min bg-plus"></div></button>
+                        </div>
+                    </div>
+                    <div class="product-catalog-item">
+                        <!--<img src="img/SecondProduct.png" alt="Product">-->
+                        <div class="product-catalog-item-desc">
+                            <div>WishVitalise Dress</div>
+                            <div>$96.55</div>
+                            <button class="btn btn-add">add to cart<div class="bg-plus_min bg-plus"></div></button>
+                        </div>
+                    </div>
+                    <div class="product-catalog-item">
+                        <!--<img src="img/SecondProduct.png" alt="Product">-->
+                        <div class="product-catalog-item-desc">
+                            <div>WishVitalise Dress</div>
+                            <div>$96.55</div>
+                            <button class="btn btn-add">add to cart<div class="bg-plus_min bg-plus"></div></button>
+                        </div>
+                    </div>
+                    <div class="product-catalog-item">
+                        <!--<img src="img/SecondProduct.png" alt="Product">-->
+                        <div class="product-catalog-item-desc">
+                            <div>WishVitalise Dress</div>
+                            <div>$96.55</div>
+                            <button class="btn btn-add">add to cart<div class="bg-plus_min bg-plus"></div></button>
+                        </div>
                     </div>
                 </div>
+                <button class="btn btn-black">load more</button>
             </div>
         </div>
     </section>
     <section class="clearance">
-        <div class="container">
-            <div class="clearance-img">
-                <div class="clearance-img-in"></div>
+        <div class="clearance-catalog">
+            <div class="container">
+                <div class="clearance-img">
+                    <div class="clearance-img-in"></div>
+                </div>
+                <div class="product-catalog-set clearfix">
+                    <div class="product-catalog-item">
+                        <!--<img src="img/bag1.png" alt="Bag">-->
+                        <div class="product-catalog-item-desc">
+                            <div>Atmos&Here Shopper</div>
+                            <div>$49.95</div>
+                            <button class="btn btn-add">add to cart<div class="bg-plus_min bg-plus"></div></button>
+                        </div>
+                    </div>
+                    <div class="product-catalog-item">
+                        <div class="sale">
+                            <img src="img/sale.png" alt="Sale">
+                        </div>
+                        <!--<img src="img/bag2.png" alt="Bag">-->
+                        <div class="product-catalog-item-desc">
+                            <div>WishVitalise Dress</div>
+                            <div>$96.55</div>
+                            <button class="btn btn-add">add to cart<div class="bg-plus_min bg-plus"></div></button>
+                        </div>
+                    </div>
+                    <div class="product-catalog-item">
+                        <!--<img src="img/bag2.png" alt="Bag">-->
+                        <div class="product-catalog-item-desc">
+                            <div>WishVitalise Dress</div>
+                            <div>$96.55</div>
+                            <button class="btn btn-add">add to cart<div class="bg-plus_min bg-plus"></div></button>
+                        </div>
+                    </div>
+                    <div class="product-catalog-item">
+                        <div class="sale">
+                            <img src="img/sale.png" alt="Sale">
+                        </div>
+                        <!--<img src="img/bag2.png" alt="Bag">-->
+                        <div class="product-catalog-item-desc">
+                            <div>WishVitalise Dress</div>
+                            <div>$96.55</div>
+                            <button class="btn btn-add">add to cart<div class="bg-plus_min bg-plus"></div></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="product-catalog-set clearfix">
-                <div class="product-catalog-item">
-                    <img src="img/bag1.png" alt="Bag">
-                    <div class="product-catalog-item-desc">
-                        <div>Atmos&Here Shopper</div>
-                        <div>$49.95</div>
-                        <button class="btn btn-add">add to cart<div class="bg-plus_min"></div></button>
-                    </div>
-                </div>
-                <div class="product-catalog-item">
-                    <img src="img/bag2.png" alt="Bag">
-                    <div class="product-catalog-item-desc">
-                        <div>WishVitalise Dress</div>
-                        <div>$96.55</div>
-                        <button class="btn btn-add">add to cart<div class="bg-plus_min"></div></button>
-                    </div>
-                </div>
-                <div>
-                    <button class="btn btn-black">load more</button>
+            <button class="btn btn-black">load more</button>
+        </div>
+        <div class="fav_brands">
+            <div class="container">
+                <div class="fav_brands-logo">
+                    <span>favourite brands</span>
+                    <div class="brands-item"><a href="#"><img src="img/Addict.png" alt="Logo"></a></div>
+                    <div class="brands-item"><a href="#"><img src="img/Abadon.png" alt="Logo"></a></div>
+                    <div class="brands-item"><a href="#"><img src="img/Adidas.png" alt="Logo"></a></div>
+                    <div class="brands-item"><a href="#"><img src="img/Boy.png" alt="Logo"></a></div>
+                    <div class="brands-item"><a href="#"><img src="img/convers.png" alt="Logo"></a></div>
+                    <div class="brands-item"><a href="#"><img src="img/Klein.png" alt="Logo"></a></div>
+                    <div class="brands-item"><a href="#"><img src="img/edwin.png" alt="Logo"></a></div>
+                    <div class="brands-item"><a href="#"><img src="img/grenson.png" alt="Logo"></a></div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="about">
+        <h2>About LookShop</h2>
+        <div class="container">
+            <div class="about-text">
+                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
+                sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a
+                odio tincidunt auctor a ornare odio. Sed non  mauris vitae
+                erat consequat auctor eu in elit. Class aptent taciti sociosqu
+                ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Mauris in erat justo. Nullam ac urna eu felis dapibus
+                condimentum sit amet a augue.
+            </div>
+        </div>
+        <div class="payment">
+            <span>We accept</span>
+            <div class="payment-item"><a href="#"><img src="img/visa.png" alt="Payment"></a></div>
+            <div class="payment-item"><a href="#"><img src="img/mastercard.png" alt="Payment"></a></div>
+            <div class="payment-item"><a href="#"><img src="img/paypal.png" alt="Payment"></a></div>
+            <div class="payment-item"><a href="#"><img src="img/hz1.png" alt="Payment"></a></div>
+            <div class="payment-item"><a href="#"><img src="img/visaelectronic.png" alt="Payment"></a></div>
+            <div class="payment-item"><a href="#"><img src="img/hz2.png" alt="Payment"></a></div>
+            <div class="payment-item"><a href="#"><img src="img/hz3.png" alt="Payment"></a></div>
+            <div class="payment-item"><a href="#"><img src="img/delta.png" alt="Payment"></a></div>
+            <div class="payment-item"><a href="#"><img src="img/hz4.png" alt="Payment"></a></div>
+            <div class="payment-item"><a href="#"><img src="img/hz5.png" alt="Payment"></a></div>
+            <div class="payment-item"><a href="#"><img src="img/dk.png" alt="Payment"></a></div>
+        </div>
+    </section>
 </main>
 <footer>
+    <section class="footer-info">
+        <div class="container footer-info-flex">
+            <div class="footer-info-ref">
+                <div class="footer-info-ref-item">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of payment</a></li>
+                        <li><a href="#">Terms of sale</a></li>
+                        <li><a href="#">Delivery terms and conditions</a></li>
+                        <li><a href="#">Returns and Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-ref-item">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">How to Shop</a></li>
+                        <li><a href="#">About Nelly</a></li>
+                        <li><a href="#">Investor relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-ref-item">
+                    <h3>Campaigns</h3>
+                    <ul>
+                        <li><a href="#">Evening dresses</a></li>
+                        <li><a href="#">Makeup</a></li>
+                        <li><a href="#">Fashion forward</a></li>
+                        <li><a href="#">training clothes</a></li>
+                        <li><a href="#">Special Occasion Dresses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-ref-item">
+                    <h3>Stores</h3>
+                    <ul>
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">London</a></li>
+                        <li><a href="#">Madrid</a></li>
+                        <li><a href="#">Tokio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info-links">
+                <div class="footer-info-links-item">
+                    <h3>Social</h3>
+                    <div class="footer-links-set">
+                        <img src="img/VectorSmartObject.png" alt="Link">
+                        <img src="img/VectorSmartObject-1.png" alt="Link">
+                        <img src="img/VectorSmartObject-2.png" alt="Link">
+                        <img src="img/VectorSmartObject-3.png" alt="Link">
+                        <img src="img/VectorSmartObject-4.png" alt="Link">
+                        <img src="img/VectorSmartObject-5.png" alt="Link">
+                    </div>
+                </div>
+                <div class="footer-info-links-item">
+                    <img src="img/secured.png" alt="Secured 100%">
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="container">
         <div class="footer-cont clearfix">
             <div>
-                <button class="bg-menu"></button>
+                <nav>
+                    <input type="checkbox" name="menu" id="btn-menu-footer" />
+                    <label for="btn-menu" class="bg-menu"></label>
+                        <ul>
+                            <li><a href="#">Privacy & Cookies</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Store Directory</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                </nav>
             </div>
             <div class="clearfix">
                 <div>© LookShop.com</div>
