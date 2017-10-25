@@ -10,7 +10,7 @@
 
 html {
   height: 100%;
-
+  overflow-x: hidden;
 }
 
 body{
@@ -679,19 +679,27 @@ nav {
     }
   }
 
+  .logoandbucket{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-logo-menu{
+    margin-top: 20px;
+    margin-bottom: 17px;
+  }
+
   .header-logo-part-set {
-    padding: 21px 0;
+    padding: 21px 0 0 0;
 
     .logo {
       background: url("../img/logo-tab.png");
       width: 120px;
       height: 28px;
-      float: left;
       margin-top: 20px;
     }
 
     .bucket-set {
-      float: right;
 
       select {
         background-color: white;
@@ -729,7 +737,6 @@ nav {
       }
     }
   }
-
 
   .menu {
     background-color: #fd926d;
@@ -782,9 +789,82 @@ nav {
   }
 
   .slider {
+    width: 760px;
     height: 350px;
-    background-color: grey;
-    margin: 17px 0 55px 0;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 73px;
+
+    & > input {
+      display: none;
+    }
+
+    & > input + label {
+      background: #867a76 none repeat scroll 0 0;
+      border-radius: 8px;
+      cursor: pointer;
+      display: block;
+      float: left;
+      height: 10px;
+      left: 44.5%;
+      margin-right: 20px;
+      position: relative;
+      top: 107%;
+      transition: background 0.8s ease-out 0s;
+      width: 10px;
+      z-index: 100;
+    }
+
+    & > input + label:hover {
+      background: #fd926d;
+    }
+
+    & > input:checked + label {
+      background: #fd926d;
+    }
+
+    & > div {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 0;
+    }
+
+    & > div {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    }
+
+    & > input:checked + label + div {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    }
+
+    div:nth-child(6){
+      background: url("../img/SlideIPad.png") no-repeat;
+
+      a{
+        width: 116px;
+        height: 43px;
+        background-color: #fd926d;
+        z-index: 100;
+        position: absolute;
+        top: 252px;
+        left: 145px;
+        border-bottom: 3px solid #dd6b44;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        padding-top: 12px;
+        font-size: 12px;
+      }
+    }
   }
 
   .email-links {
@@ -1342,6 +1422,11 @@ nav {
 
   .header-logo-desktop{
 
+    .header-logo-menu{
+      float: left;
+    }
+
+
     .header-logo-part-set {
       padding: 21px 0;
 
@@ -1402,10 +1487,8 @@ nav {
       button{}
 
       .menu-desktop{
-        float: left;
-        margin-left: 175px;
-        margin-top: 8px;
-        width: 450px;
+        display: flex;
+        margin: 8px 0 0 115px;
 
         ul{
           display: flex;
@@ -1427,9 +1510,82 @@ nav {
   }
 
   .slider {
-    height: 461px;
-    background-color: grey;
-    margin: 0px 0 55px 0;
+    width: 1200px;
+    height: 440px;
+
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 73px;
+
+    & > input {
+      display: none;
+    }
+
+    & > input + label {
+      background: #867a76 none repeat scroll 0 0;
+      border-radius: 8px;
+      cursor: pointer;
+      display: block;
+      float: left;
+      height: 10px;
+      left: 44.5%;
+      margin-right: 20px;
+      position: relative;
+      top: 107%;
+      transition: background 0.8s ease-out 0s;
+      width: 10px;
+      z-index: 100;
+    }
+
+    & > input + label:hover {
+      background: #fd926d;
+    }
+
+    & > input:checked + label {
+      background: #fd926d;
+    }
+
+    & > div {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 0;
+    }
+
+    & > div {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    }
+
+    & > input:checked + label + div {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+    }
+
+    div:nth-child(6){
+      background: url("../img/SlideDesktop.png") no-repeat;
+
+     a{
+       width: 156px;
+       height: 54px;
+       background-color: #fd926d;
+       z-index: 100;
+       position: absolute;
+       top: 302px;
+       left: 273px;
+       border-bottom: 3px solid #dd6b44;
+       box-sizing: border-box;
+       text-transform: uppercase;
+       text-decoration: none;
+       color: white;
+       padding-top: 17px;
+     }
+    }
   }
 
   .email-links {

@@ -10,6 +10,7 @@
 
 html {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -568,18 +569,22 @@ nav label {
     width: 30px;
     border-right: 1px solid #444444;
   }
+  .logoandbucket {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-logo-menu {
+    margin-top: 20px;
+    margin-bottom: 17px;
+  }
   .header-logo-part-set {
-    padding: 21px 0;
+    padding: 21px 0 0 0;
   }
   .header-logo-part-set .logo {
     background: url("../img/logo-tab.png");
     width: 120px;
     height: 28px;
-    float: left;
     margin-top: 20px;
-  }
-  .header-logo-part-set .bucket-set {
-    float: right;
   }
   .header-logo-part-set .bucket-set select {
     background-color: white;
@@ -653,9 +658,73 @@ nav label {
     font-size: 16px;
   }
   .slider {
+    width: 760px;
     height: 350px;
-    background-color: grey;
-    margin: 17px 0 55px 0;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 73px;
+  }
+  .slider > input {
+    display: none;
+  }
+  .slider > input + label {
+    background: #867a76 none repeat scroll 0 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 10px;
+    left: 44.5%;
+    margin-right: 20px;
+    position: relative;
+    top: 107%;
+    transition: background 0.8s ease-out 0s;
+    width: 10px;
+    z-index: 100;
+  }
+  .slider > input + label:hover {
+    background: #fd926d;
+  }
+  .slider > input:checked + label {
+    background: #fd926d;
+  }
+  .slider > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+  }
+  .slider > div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+  }
+  .slider > input:checked + label + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+  }
+  .slider div:nth-child(6) {
+    background: url("../img/SlideIPad.png") no-repeat;
+  }
+  .slider div:nth-child(6) a {
+    width: 116px;
+    height: 43px;
+    background-color: #fd926d;
+    z-index: 100;
+    position: absolute;
+    top: 252px;
+    left: 145px;
+    border-bottom: 3px solid #dd6b44;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding-top: 12px;
+    font-size: 12px;
   }
   .email-links {
     background-color: #ededed;
@@ -1107,6 +1176,9 @@ nav label {
     width: 30px;
     border-right: 1px solid #444444;
   }
+  .header-logo-desktop .header-logo-menu {
+    float: left;
+  }
   .header-logo-desktop .header-logo-part-set {
     padding: 21px 0;
   }
@@ -1154,10 +1226,8 @@ nav label {
     display: none;
   }
   .header-logo-desktop .menu .menu-desktop {
-    float: left;
-    margin-left: 175px;
-    margin-top: 8px;
-    width: 450px;
+    display: flex;
+    margin: 8px 0 0 115px;
   }
   .header-logo-desktop .menu .menu-desktop ul {
     display: flex;
@@ -1173,9 +1243,72 @@ nav label {
     font-size: 16px;
   }
   .slider {
-    height: 461px;
-    background-color: grey;
-    margin: 0px 0 55px 0;
+    width: 1200px;
+    height: 440px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 73px;
+  }
+  .slider > input {
+    display: none;
+  }
+  .slider > input + label {
+    background: #867a76 none repeat scroll 0 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 10px;
+    left: 44.5%;
+    margin-right: 20px;
+    position: relative;
+    top: 107%;
+    transition: background 0.8s ease-out 0s;
+    width: 10px;
+    z-index: 100;
+  }
+  .slider > input + label:hover {
+    background: #fd926d;
+  }
+  .slider > input:checked + label {
+    background: #fd926d;
+  }
+  .slider > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+  }
+  .slider > div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+  }
+  .slider > input:checked + label + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+  }
+  .slider div:nth-child(6) {
+    background: url("../img/SlideDesktop.png") no-repeat;
+  }
+  .slider div:nth-child(6) a {
+    width: 156px;
+    height: 54px;
+    background-color: #fd926d;
+    z-index: 100;
+    position: absolute;
+    top: 302px;
+    left: 273px;
+    border-bottom: 3px solid #dd6b44;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding-top: 17px;
   }
   .email-links {
     background-color: #ededed;
