@@ -363,6 +363,10 @@ nav {
       position: relative;
       margin-right: 33px;
 
+      .product-catalog-item-shop{
+        display: none;
+      }
+
       .product-catalog-item-desc{
         text-align: center;
         background-color: #f7f7f7;
@@ -533,6 +537,7 @@ nav {
     width: 30px;
     height: 29px;
     background: url('../img/css_sprites IPad.png') -10px -10px;
+    display: inline-block;
   }
 
   .bg-ContactUser {
@@ -795,7 +800,7 @@ nav {
     position: relative;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 73px;
+    padding-bottom: 54px;
 
     & > input {
       display: none;
@@ -1050,6 +1055,37 @@ nav {
       padding-top: 5px;
       position: relative;
       margin-right: 30px;
+
+      .product-catalog-item-shop{
+        display: none;
+      }
+
+      &:hover{
+        min-width: 240px;
+        margin: -10px 6px -20px 6px;
+        height: 410px;
+
+        .product-catalog-item-shop{
+          display: block;
+          position: absolute;
+          left: 23%;
+          top: 20%;
+          background-color: #3d3d3d;
+          font-size: 12px;
+          height: 50px;
+          border-radius: 100%;
+          border: 40px solid #3d3d3d;
+
+          a{
+            text-decoration: none;
+          }
+          span{
+            display: block;
+            color: white;
+            text-transform: uppercase;
+          }
+        }
+      }
 
       .product-catalog-item-desc{
         text-align: center;
@@ -1364,6 +1400,13 @@ nav {
     background: url('../img/css_sprites IPad.png') -60px -10px;
   }
 
+  .bg-basket2 {
+    width: 30px;
+    height: 29px;
+    background: url('../img/css_sprites IPad.png') -10px -10px;
+    display: inline-block;
+  }
+
   main{
     min-height: 100%;
     padding-bottom: 270px;
@@ -1648,7 +1691,7 @@ nav {
   }
 
   .offers{
-    padding: 38px 0 52px 0;
+    padding: 38px 0 57px 0;
 
     .offer{
       float: left;
@@ -1790,6 +1833,37 @@ nav {
           &:nth-child(2){
             font-size: 22px;
             margin-top: 6px;
+          }
+        }
+      }
+
+      .product-catalog-item-shop{
+        display: none;
+      }
+
+      &:hover{
+        min-width: 240px;
+        margin: -10px 6px -20px 6px;
+        height: 410px;
+
+        .product-catalog-item-shop{
+          display: block;
+          position: absolute;
+          left: 23%;
+          top: 20%;
+          background-color: #3d3d3d;
+          font-size: 12px;
+          height: 50px;
+          border-radius: 100%;
+          border: 40px solid #3d3d3d;
+
+          a{
+            text-decoration: none;
+          }
+          span{
+            display: block;
+            color: white;
+            text-transform: uppercase;
           }
         }
       }

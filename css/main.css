@@ -316,6 +316,9 @@ nav label {
     position: relative;
     margin-right: 33px;
   }
+  .product-catalog-set .product-catalog-item .product-catalog-item-shop {
+    display: none;
+  }
   .product-catalog-set .product-catalog-item .product-catalog-item-desc {
     text-align: center;
     background-color: #f7f7f7;
@@ -450,6 +453,7 @@ nav label {
     width: 30px;
     height: 29px;
     background: url("../img/css_sprites IPad.png") -10px -10px;
+    display: inline-block;
   }
   .bg-ContactUser {
     float: left;
@@ -664,7 +668,7 @@ nav label {
     position: relative;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 73px;
+    padding-bottom: 54px;
   }
   .slider > input {
     display: none;
@@ -877,6 +881,33 @@ nav label {
     padding-top: 5px;
     position: relative;
     margin-right: 30px;
+  }
+  .product-catalog-set .product-catalog-item .product-catalog-item-shop {
+    display: none;
+  }
+  .product-catalog-set .product-catalog-item:hover {
+    min-width: 240px;
+    margin: -10px 6px -20px 6px;
+    height: 410px;
+  }
+  .product-catalog-set .product-catalog-item:hover .product-catalog-item-shop {
+    display: block;
+    position: absolute;
+    left: 23%;
+    top: 20%;
+    background-color: #3d3d3d;
+    font-size: 12px;
+    height: 50px;
+    border-radius: 100%;
+    border: 40px solid #3d3d3d;
+  }
+  .product-catalog-set .product-catalog-item:hover .product-catalog-item-shop a {
+    text-decoration: none;
+  }
+  .product-catalog-set .product-catalog-item:hover .product-catalog-item-shop span {
+    display: block;
+    color: white;
+    text-transform: uppercase;
   }
   .product-catalog-set .product-catalog-item .product-catalog-item-desc {
     text-align: center;
@@ -1133,6 +1164,12 @@ nav label {
     height: 35px;
     background: url("../img/css_sprites IPad.png") -60px -10px;
   }
+  .bg-basket2 {
+    width: 30px;
+    height: 29px;
+    background: url("../img/css_sprites IPad.png") -10px -10px;
+    display: inline-block;
+  }
   main {
     min-height: 100%;
     padding-bottom: 270px;
@@ -1360,7 +1397,7 @@ nav label {
     background-color: #ededed;
   }
   .offers {
-    padding: 38px 0 52px 0;
+    padding: 38px 0 57px 0;
   }
   .offers .offer {
     float: left;
@@ -1480,6 +1517,33 @@ nav label {
   .product-catalog-set .product-catalog-item .product-catalog-item-desc div:nth-child(2) {
     font-size: 22px;
     margin-top: 6px;
+  }
+  .product-catalog-set .product-catalog-item .product-catalog-item-shop {
+    display: none;
+  }
+  .product-catalog-set .product-catalog-item:hover {
+    min-width: 240px;
+    margin: -10px 6px -20px 6px;
+    height: 410px;
+  }
+  .product-catalog-set .product-catalog-item:hover .product-catalog-item-shop {
+    display: block;
+    position: absolute;
+    left: 23%;
+    top: 20%;
+    background-color: #3d3d3d;
+    font-size: 12px;
+    height: 50px;
+    border-radius: 100%;
+    border: 40px solid #3d3d3d;
+  }
+  .product-catalog-set .product-catalog-item:hover .product-catalog-item-shop a {
+    text-decoration: none;
+  }
+  .product-catalog-set .product-catalog-item:hover .product-catalog-item-shop span {
+    display: block;
+    color: white;
+    text-transform: uppercase;
   }
   .product-catalog-set div:last-child {
     text-align: center;
